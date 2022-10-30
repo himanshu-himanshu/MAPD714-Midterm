@@ -64,11 +64,11 @@ class ShoppingListViewController: UIViewController {
     }
     
     func resetQuantity() {
-        quantity1.text = "1"
-        quantity2.text = "1"
-        quantity3.text = "1"
-        quantity4.text = "1"
-        quantity5.text = "1"
+        quantity1.text = "0"
+        quantity2.text = "0"
+        quantity3.text = "0"
+        quantity4.text = "0"
+        quantity5.text = "0"
     }
     
     
