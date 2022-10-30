@@ -102,9 +102,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="listItem1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GvG-di-HtP"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-Cu-qSA">
                                                 <rect key="frame" x="208" y="0.0" width="7.6666666666666572" height="34"/>
@@ -115,7 +112,7 @@
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="abj-gX-ler">
                                                 <rect key="frame" x="263.66666666666669" y="0.0" width="94" height="34"/>
                                                 <connections>
-                                                    <action selector="stepper1:" destination="BYZ-38-t0r" eventType="valueChanged" id="aBA-UG-mLW"/>
+                                                    <action selector="stepper1:" destination="BYZ-38-t0r" eventType="valueChanged" id="TAH-YB-gTS"/>
                                                 </connections>
                                             </stepper>
                                         </subviews>
@@ -144,6 +141,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XsR-DC-unP">
                                                 <rect key="frame" x="263.66666666666669" y="0.0" width="94" height="34"/>
+                                                <connections>
+                                                    <action selector="stepper2:" destination="BYZ-38-t0r" eventType="valueChanged" id="A6s-0o-gCU"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                         <constraints>
@@ -171,6 +171,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mBm-bf-Gbj">
                                                 <rect key="frame" x="263.66666666666669" y="0.0" width="94" height="34"/>
+                                                <connections>
+                                                    <action selector="stepper3:" destination="BYZ-38-t0r" eventType="valueChanged" id="uWO-Uu-HJZ"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                         <constraints>
@@ -198,6 +201,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-AP-t7S">
                                                 <rect key="frame" x="263.66666666666669" y="0.0" width="94" height="34"/>
+                                                <connections>
+                                                    <action selector="stepper4:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Em-2n-GOw"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                         <constraints>
@@ -225,6 +231,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-Yn-APq">
                                                 <rect key="frame" x="263.66666666666669" y="0.0" width="94" height="34"/>
+                                                <connections>
+                                                    <action selector="stepper5:" destination="BYZ-38-t0r" eventType="valueChanged" id="mRs-g7-idi"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                         <constraints>
@@ -292,17 +301,17 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="listItem1" destination="TfP-fK-NY3" id="b87-2q-1Iz"/>
-                        <outlet property="listItem2" destination="eNI-fL-nqe" id="lIU-CJ-KcQ"/>
-                        <outlet property="listItem3" destination="Rf7-FZ-x6U" id="fmD-v5-zOP"/>
-                        <outlet property="listItem4" destination="uxS-Lq-2Xz" id="Yih-Pc-ebV"/>
-                        <outlet property="listItem5" destination="nUZ-8k-1Zy" id="cP2-PW-W6k"/>
+                        <outlet property="item1" destination="TfP-fK-NY3" id="NVF-ph-A28"/>
+                        <outlet property="item2" destination="eNI-fL-nqe" id="6EL-Ey-LOz"/>
+                        <outlet property="item3" destination="Rf7-FZ-x6U" id="TQ0-UU-ZwK"/>
+                        <outlet property="item4" destination="uxS-Lq-2Xz" id="ajh-Rk-Lrq"/>
+                        <outlet property="item5" destination="nUZ-8k-1Zy" id="Lqc-Lt-HV7"/>
                         <outlet property="listNameField" destination="PED-Uv-qcA" id="Ibp-lq-UjI"/>
-                        <outlet property="quantity1" destination="tf1-Cu-qSA" id="FL3-db-91I"/>
-                        <outlet property="quantity2" destination="oRD-8N-4cq" id="pYd-SW-9Nf"/>
-                        <outlet property="quantity3" destination="4gq-uQ-2zh" id="lWn-yX-SEG"/>
-                        <outlet property="quantity4" destination="anL-lP-1j7" id="WGu-oP-f3I"/>
-                        <outlet property="quantity5" destination="OF9-Ke-KXL" id="9Am-8h-9lT"/>
+                        <outlet property="quantity1" destination="tf1-Cu-qSA" id="lgq-Y3-2Y2"/>
+                        <outlet property="quantity2" destination="oRD-8N-4cq" id="rgl-mJ-8yW"/>
+                        <outlet property="quantity3" destination="4gq-uQ-2zh" id="ae4-BL-ExT"/>
+                        <outlet property="quantity4" destination="anL-lP-1j7" id="QGI-Jf-zcw"/>
+                        <outlet property="quantity5" destination="OF9-Ke-KXL" id="oDu-An-s0L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
